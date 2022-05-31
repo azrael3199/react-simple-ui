@@ -1,6 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": "yarn run format:fix && yarn run lint:fix",
-    "pre-push": "yarn run test:noWatch"
-  }
-}
