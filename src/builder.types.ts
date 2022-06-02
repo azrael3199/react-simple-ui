@@ -1,3 +1,3 @@
-export type nothing = null
+export {}
 
 // TODO a lot

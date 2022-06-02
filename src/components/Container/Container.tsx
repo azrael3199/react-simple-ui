@@ -7,7 +7,7 @@ interface Props {
 }
 
 const buildClassString = (props: Props): string => {
-    let classString: string = ""
+    let classString = ''
     Object.keys(props.style).forEach((key: string) => { classString += `${props.style[key]} ` })
     return classString
 }

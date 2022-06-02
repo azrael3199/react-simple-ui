@@ -1,3 +1,3 @@
-export default null
+export {}
 
 // TODO a lot
