@@ -39,4 +39,5 @@ an example of a proper commit message would be: `chore: RSU-11 initialized commi
 # Important Links
 
   - MIRO board for Common Blueprint Design: https://miro.com/app/board/uXjVOwx2Cp4=/
+  - MIRO board for Blueprint to Component Mapping: https://miro.com/app/board/uXjVOwQmZ9s=/
   - JIRA: https://chinmay-sg.atlassian.net/jira/software/projects/RSU/boards/1
