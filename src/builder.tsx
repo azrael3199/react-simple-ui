@@ -1,4 +1,3 @@
-import React from 'react';
 import { IBlueprintProperties } from './builder.types';
 import Container from './components/Container/Container';
 import { defaultTheme } from './themes/themes';
@@ -28,9 +27,7 @@ const build = (
   theme?: IThemeProperties,
 ): JSX.Element => {
   // TODO Use currentTheme to populate unspecified default styles in other components
-  const [selectedTheme, setSelectedTheme] = React.useState<IThemeProperties>(
-    theme ?? defaultTheme,
-  );
+  const selectedTheme = theme ?? defaultTheme;
 
   const screen: JSX.Element = buildRecursiveComponents(blueprint);
   return screen ?? <></>;
