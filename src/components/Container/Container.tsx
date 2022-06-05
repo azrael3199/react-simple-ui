@@ -1,26 +1,17 @@
-import { ReactElement } from 'react'
-import { IStylingProperties } from '../../types/common.types'
+import { ContainerProps } from './Container.types';
 
-interface Props {
-    style: IStylingProperties,
-    children: ReactElement[]
-}
+const buildClassString = (props: ContainerProps): string => {
+  let classString = '';
+  Object.keys(props.style).forEach((key: string) => {
+    classString += `${props.style[key]} `;
+  });
+  return classString;
+};
 
-const buildClassString = (props: Props): string => {
-    let classString = ''
-    Object.keys(props.style).forEach((key: string) => { classString += `${props.style[key]} ` })
-    return classString
-}
+const Container = (props: ContainerProps) => {
+  const classString: string = buildClassString(props);
 
-const Container = (props: Props) => {
+  return <div className={classString}>{props.children}</div>;
+};
 
-    const classString: string = buildClassString(props)
-
-    return (
-        <div className={classString}>
-            {props.children}
-        </div>
-    )
-}
-
-export default Container
+export default Container;

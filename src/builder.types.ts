@@ -1,3 +1,3 @@
-export {}
-
-// TODO a lot
+export interface IBlueprintProperties {
+  [key: string]: any;
+}
