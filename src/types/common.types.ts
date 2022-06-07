@@ -1,9 +1,5 @@
 import { UrlWithStringQuery } from 'url';
 
-export interface IStylingProperties {
-  [key: string]: string;
-}
-
 export interface IFontProperties {
   fontFamily: string | UrlWithStringQuery;
 }
