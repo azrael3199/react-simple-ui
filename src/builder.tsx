@@ -10,7 +10,7 @@ const buildRecursiveComponents = (
   switch (component) {
     case 'container':
       return (
-        <Container style={bpObject.style}>
+        <Container className={bpObject.className}>
           {bpObject.items ??
             bpObject.items.map((comp: IBlueprintProperties) =>
               buildRecursiveComponents(comp),
