@@ -1,6 +1,6 @@
 # react-simple-ui
 
-Common UI Components in React created in a way to enable faster and simpler development.
+Common UI Screens and Pages in React created in a way to enable faster and simpler development.
 
 
 # Contributing
@@ -11,9 +11,7 @@ Common UI Components in React created in a way to enable faster and simpler deve
 
 There is no strict conventions for naming your branches, however some general rules need to be followed:
 
-  - Your branch name should contain the Jira Issue ID of the Epic under which your task comes.
-  - Your branch name should briefly describe what it intends to do, it can also contain the title of the Jira epic
-  - e.g: `RSU-12/initial-repo-setup`
+  - Your branch name should briefly describe what it intends to do
 
 ### Commit Messages
 
@@ -35,9 +33,3 @@ In general, the subjects are:
 
 an example of a proper commit message would be: `chore: RSU-11 initialized commitlint and commitizen`
 
-
-# Important Links
-
-  - MIRO board for Common Blueprint Design: https://miro.com/app/board/uXjVOwx2Cp4=/
-  - MIRO board for Blueprint to Component Mapping: https://miro.com/app/board/uXjVOwQmZ9s=/
-  - JIRA: https://chinmay-sg.atlassian.net/jira/software/projects/RSU/boards/1
