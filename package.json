@@ -1,0 +1,58 @@
+{
+  "name": "react-simple-ui",
+  "description": "Common UI Screens and Pages in React created in a way to enable faster and simpler development.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "commit": "git-cz",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azrael3199/react-simple-ui.git"
+  },
+  "author": "Chinmay Ghungurde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azrael3199/react-simple-ui/issues"
+  },
+  "homepage": "https://github.com/azrael3199/react-simple-ui#readme",
+  "dependencies": {
+    "eslint-plugin-jest": "^27.1.3",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
