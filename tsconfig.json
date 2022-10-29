@@ -1,6 +1,11 @@
 {
   "include": ["./src/**/*"],
-  "exclude": [],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx"
+  ],
   "outDir": "./scripts",
   "rootDir": "./src",
   "compilerOptions": {
