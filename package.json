@@ -1,7 +1,7 @@
 {
   "name": "@azrael3199/react-simple-ui",
   "description": "Common UI Screens and Pages in React created in a way to enable faster and simpler development.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/azrael3199"
   },
@@ -10,12 +10,10 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "postinstall": "husky install",
     "commit": "git-cz",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "test": "jest --passWithNoTests",
-    "rollup": "rollup -c",
-    "build:dist": "rollup"
+    "build": "rimraf dist && rollup -c"
   },
   "config": {
     "commitizen": {
@@ -23,7 +21,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,ts,tsx}": [
       "eslint"
     ]
   },
@@ -37,8 +35,6 @@
     "url": "https://github.com/azrael3199/react-simple-ui/issues"
   },
   "homepage": "https://github.com/azrael3199/react-simple-ui#readme",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
@@ -53,7 +49,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
     "@testing-library/react": "^13.4.0",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.0.24",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
@@ -76,6 +72,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
+    "rimraf": "^3.0.2",
     "rollup": "^3.2.3",
     "rollup-plugin-dts": "^5.0.0",
     "typescript": "^4.8.4"
