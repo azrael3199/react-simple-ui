@@ -1,7 +1,7 @@
 {
   "name": "@azrael3199/react-simple-ui",
   "description": "Common UI Screens and Pages in React created in a way to enable faster and simpler development.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/azrael3199"
   },
@@ -10,7 +10,6 @@
     "yarn": ">= 1.22.19"
   },
   "scripts": {
-    "postinstall": "husky install",
     "commit": "git-cz",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "test": "jest --passWithNoTests",
