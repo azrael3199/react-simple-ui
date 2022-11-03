@@ -1,16 +1,14 @@
 {
-  "include": ["./src/**/*"],
   "exclude": [
     "dist",
     "node_modules",
     "src/**/*.test.tsx",
     "src/**/*.stories.tsx"
   ],
-  "outDir": "./scripts",
   "rootDir": "./src",
   "compilerOptions": {
     // Default
-    "target": "es6",
+    "target": "es5",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
