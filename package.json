@@ -12,7 +12,7 @@
   "scripts": {
     "commit": "git-cz",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
-    "test": "jest --passWithNoTests",
+    "test": "yarn jest --passWithNoTests",
     "build": "rimraf dist && rollup -c"
   },
   "config": {
