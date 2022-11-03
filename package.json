@@ -3,7 +3,7 @@
   "description": "Common UI Screens and Pages in React created in a way to enable faster and simpler development.",
   "version": "0.1.2",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/azrael3199"
+    "registry": "https://registry.npmjs.org/@azrael3199"
   },
   "engines": {
     "npm": "none",
