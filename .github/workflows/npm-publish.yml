@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
+          scope: '@azrael3199'
       - run: git config user.email "chinmayghungurde@gmail.com"
       - run: git config user.name "azrael3199"
       - run: npm publish
