@@ -1,6 +1,6 @@
 # react-simple-ui
 
-Common UI Screens and Pages in React created in a way to enable faster and simpler development.
+Common UI Layouts and Pages in React created in a way to enable faster and simpler development.
 
 
 # Contributing
